@@ -1,51 +1,125 @@
-# NLP POS Tagging: Rule-Based vs HMM
+# 🚀 NLP POS Tagging: Rule-Based vs HMM
 
-This project implements and compares two classic Part-of-Speech (POS) tagging approaches in Natural Language Processing: a Rule-Based Tagger and a Hidden Markov Model (HMM) Tagger using the Viterbi algorithm.
+A complete implementation and comparison of **Rule-Based** and **Hidden Markov Model (HMM)** approaches for Part-of-Speech (POS) tagging using the Penn Treebank dataset.
 
-## Overview
+---
 
-POS tagging assigns grammatical labels (noun, verb, adjective, etc.) to each word in a sentence. It is a fundamental step in many NLP applications.
+## 📌 Overview
 
-This project builds both approaches from scratch and evaluates their performance on the Penn Treebank dataset.
+Part-of-Speech (POS) tagging assigns grammatical labels (NN, VB, JJ, etc.) to each word in a sentence. It is a core task in Natural Language Processing and a foundation for advanced applications like machine translation, chatbots, and information extraction.
 
-## Features
+This project builds both approaches from scratch and compares their performance.
 
-* Rule-Based POS Tagger using lexical and suffix rules
-* HMM Bigram Tagger with Viterbi decoding
-* Hybrid approach for handling unknown (OOV) words
-* Accuracy comparison between both models
-* Visualization (accuracy graphs & confusion matrix)
+---
 
-## Key Idea
+## ⚙️ Tech Stack
 
-The project introduces a hybrid technique where the HMM model uses rule-based suffix heuristics for unknown words instead of assigning uniform probabilities.
+* Python
+* NLTK
+* NumPy
+* Matplotlib
+* Seaborn
 
-## Results
+---
 
-* Rule-Based Accuracy: ~69%
-* HMM Accuracy: ~93%
+## 🚀 Features
 
-## Dataset
+✔ Rule-Based POS Tagger (lexical + suffix rules)
+✔ HMM Bigram Tagger with Viterbi Algorithm
+✔ Hybrid OOV (Unknown Word) Handling
+✔ Accuracy Comparison & Evaluation
+✔ Confusion Matrix & Visualizations
 
-* Penn Treebank (Wall Street Journal corpus)
-* Loaded using NLTK
+---
 
-## Installation
+## 🧠 Key Innovation
 
+Instead of assigning equal probability to unknown words, this project uses **rule-based suffix heuristics inside the HMM model**.
+
+👉 This improves unknown word accuracy significantly.
+
+---
+
+## 📊 Results
+
+| Model      | Accuracy |
+| ---------- | -------- |
+| Rule-Based | ~69%     |
+| HMM        | ~93%     |
+
+📈 HMM outperforms Rule-Based due to better context understanding.
+
+---
+
+## 📂 Dataset
+
+* Penn Treebank (WSJ Corpus)
+* Loaded via NLTK
+* ~45 POS tags
+
+---
+
+## ⚙️ Installation
+
+```bash
 pip install nltk numpy matplotlib seaborn tabulate
 python -c "import nltk; nltk.download('treebank')"
+```
 
-## How to Run
+---
 
+## ▶️ Run the Project
+
+```bash
 python nlp_updated.py
+```
 
-## Concepts Covered
+---
+
+## 📊 Output
+
+* Accuracy comparison charts
+* Confusion matrices
+* Tagged sentence outputs
+
+---
+
+## 📑 Project Presentation
+
+📥 [Download PPT](./NLP_PPT%20%281%29.pptx)
+
+---
+
+## 📸 Sample Output (Add screenshots here)
+
+*(You can upload images and link them here later)*
+
+---
+
+## 📖 Concepts Covered
 
 * POS Tagging
-* HMM
+* Hidden Markov Models (HMM)
 * Viterbi Algorithm
-* NLP Basics
+* Rule-Based NLP
+* Sequence Labeling
 
-## Conclusion
+---
 
-HMM performs significantly better than the rule-based approach due to its ability to use context and learned probabilities.
+## 💡 Conclusion
+
+HMM significantly outperforms rule-based tagging due to its ability to learn from data and use context. The hybrid approach further improves performance on unseen words.
+
+---
+
+## ⭐ Future Improvements
+
+* Add Neural Models (LSTM / BERT)
+* Improve OOV handling further
+* Deploy as a web app
+
+---
+
+## 👨‍💻 Author
+
+Your Name
