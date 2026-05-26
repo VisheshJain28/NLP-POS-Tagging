@@ -90,7 +90,7 @@ python nlp_updated.py
 
 ---
 
-## 📸 Sample Output (Add screenshots here)
+## 📸 Sample Output
 
 ![Accuracy Comparison](./Figure_1.png)
 ![Confusion Matrix HMM](./Figure_2.png)
@@ -122,6 +122,6 @@ HMM significantly outperforms rule-based tagging due to its ability to learn fro
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 Vishesh Jain
