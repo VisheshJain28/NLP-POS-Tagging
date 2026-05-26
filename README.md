@@ -86,13 +86,15 @@ python nlp_updated.py
 
 ## 📑 Project Presentation
 
-📥 [Download PPT](./NLP_PPT%20%281%29.pptx)
+📥 [Download PPT](./NLP_PPT_.pptx)
 
 ---
 
 ## 📸 Sample Output (Add screenshots here)
 
-*(You can upload images and link them here later)*
+![Accuracy Comparison](./Figure_1.png)
+![Confusion Matrix HMM](./Figure_2.png)
+![Confusion Matrix Rule Based](./Figure_3.png)
 
 ---
 
@@ -122,4 +124,4 @@ HMM significantly outperforms rule-based tagging due to its ability to learn fro
 
 ## 👨‍💻 Author
 
-Your Name
+Vishesh Jain
